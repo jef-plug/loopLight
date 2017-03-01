@@ -1,5 +1,5 @@
-define(['loopHeight'], function(require,exports,module) {
-	var loopObj = require('loopHeight');
+define(['loopLight'], function(require,exports,module) {
+	var loopObj = require('loopLight');
 
 	$('.js-click').click(function(){
 		var start = $('.active').data('id');
