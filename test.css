@@ -1,0 +1,31 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+.row-box{
+	margin-bottom: 10px;
+}
+.circle{
+	float: left;
+	width: 100px;
+	height: 80px;
+	border: 1px solid;
+	margin-right: 10px;
+}
+.row-box .circle:last-child{
+	margin-right: 0;
+}
+.clearfix::after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.active{
+	background-color: yellow;
+}
+.js-click{
+	background-color: red;
+}

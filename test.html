@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<title>roll</title>
+	<link rel="stylesheet" href="./test.css">
+</head>
+<body>
+	<div class="wrapper">
+		<ul class="row-box clearfix">
+			<li class="circle grid active" data-id="0"></li>
+			<li class="circle grid" data-id="1"></li>
+			<li class="circle grid" data-id="2"></li>
+		</ul>
+		<ul class="row-box clearfix">
+			<li class="circle grid" data-id="7"></li>
+			<li class="circle js-click"></li>
+			<li class="circle grid" data-id="3"></li>
+		</ul>
+		<ul class="row-box clearfix">
+			<li class="circle grid" data-id="6"></li>
+			<li class="circle grid" data-id="5"></li>
+			<li class="circle grid" data-id="4"></li>
+		</ul>
+	</div>
+	<script src="./lib/jquery.min.js"></script>
+	<script src="./lib/sea.js"></script>
+	<script>
+		seajs.config({
+			base:'./plus',
+			alias: {
+				'loopHeight': 'loopHeight.js'
+			}
+		});
+
+		seajs.use(['./test.js'])
+	</script>
+	
+</body>
+</html>
